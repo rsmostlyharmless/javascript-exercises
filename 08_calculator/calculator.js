@@ -12,7 +12,7 @@ const sum = function(array) {
 
 const multiply = function(array) {
   return array.length
-    ? array((accumulater, nextItem) => accumulater * nextItem)
+    ? array.reduce((accumulater, nextItem) => accumulater * nextItem)
     : 0;
 };
 
